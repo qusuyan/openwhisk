@@ -24,4 +24,4 @@ JVM_ARGS="$JVM_EXTRA_ARGS\
  -Dwhisk.standalone.host.internal=$(hostname -i)\
  -Dwhisk.standalone.host.external=localhost"
 set -x
-java $JVM_ARGS -jar openwhisk-standalone.jar --no-browser "$@"
+java $JVM_ARGS -jar openwhisk-standalone.jar --no-browser --no-ui "$@"
